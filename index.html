@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Password Strength</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/dumbbell-solid-full.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/1c001ed397.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <p id="Title">Password Strength Checker</p>
+
+        <input type="password" name="" id="password" placeholder="Password" oninput="checkCondition()">
+
+        <i class="eyeIcon fa-solid fa-eye-slash" style="color: rgb(255, 255, 255);" onclick="eyeCLoseEye()"></i>
+
+        <p id="message">password is <span id="passwordStatus"></span></p>
+
+        <div class="strength-bar-container">
+                <div id="strengthBar" class="strength-bar"></div>
+            </div>
+            <div class="condition">
+                <ul >Password must contains
+                    <li ><i id="number" ></i> At least 1 number (0...9)</li>
+                    <li ><i id="lowercase" ></i>At least 1 lowercase letter (a...z)</li>
+                    <li ><i id="uppercase" ></i>At least 1 uppercase letter (A...Z)</li>
+                    <li ><i id="symbol" ></i>At least 1 special symbol (!...$)</li>
+                    <li ><i id="length" ></i>At least 8 characters length</li>
+
+                </ul>
+            </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
